@@ -11,7 +11,7 @@ output:
 require(knitr)
 require(tidyverse)
 require(tigerstats)
-
+data = read.csv('GSScsv.csv')
 ```
 
 # Introduction
@@ -26,6 +26,9 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+
+We try to predict WORDSUM based on degree. WORDSUM is numercial and DEGREE is categorical, therefore the method used will be used is numerical/ categorical.
+
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
@@ -35,6 +38,16 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+par(mar = c(5, 15, 5, 2))
+boxplot(WORDSUM~DEGREE,data=data)
+unique(data$DEGREE)
+```
+
+
+The x-axis represents the level of degree obtained and y-axis represents the average WORDSUM. Based on the graph the lowest average score on the WORDSUM test was obtained by LT HIGH SCHOOL scoring at 8. The highest average score on the WORDSUM test was obtained by the GRADUATES scoring at 11. Therefore, GRADUATES score higher than all other schooling DEGREES. 
+
 
 ### Numerical Descriptive Results
 
