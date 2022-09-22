@@ -85,6 +85,6 @@ Based on the above, it is noted that HIGH SCHOOL-GRADUATE and LT HIGH SCHOOL-HIG
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-The study shows there is a significant difference in average score on the WORDSUM test between at least two levels of DEGREE. The p-value is 0.000236 which is less than 0.05, therefore, we reject the null hypothesis. The data above demonstrates WORDSUM average score results are high in those in higher levels of education. 
+The study shows there is a significant difference in average score on the WORDSUM test between at least two levels of DEGREE. The p-value is 0.000236 which is less than 0.05, resulting, we reject the null hypothesis. The data above demonstrates WORDSUM average score results are high in those in higher levels of education. 
 
 
