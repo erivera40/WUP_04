@@ -57,7 +57,7 @@ The x-axis represents the level of degree obtained and y-axis represents the ave
 favstats(WORDSUM~DEGREE,data=data)
 ```
 
-The numerical summary demonstrates the average score of GRADUATE performed the highest than all other schooling levels at 10.095238 and the lowest mean score is calculated at 7.750000 by the LT HIGH SCHOOL. 10.095238 is greater than 0.05, therefore, we fail to reject the null hypothesis. 
+The numerical summary demonstrates the average score of GRADUATE performed the highest than all other schooling levels at 10.095238 and the lowest mean score is calculated at 7.750000 by the LT HIGH SCHOOL. 10.095238.
 
 
 ## Inferential Results
@@ -68,6 +68,12 @@ The numerical summary demonstrates the average score of GRADUATE performed the h
 model1 <- aov(WORDSUM~DEGREE,data=data)
 summary.aov(model1)
 ```
+
+
+Based on the inferential results, the p-value is 0.000236 which is smaller than 0.05, therefore, we reject the null hypothesis. There is a significant difference in average score on the WORDSUM test between at least two levels of DEGREE.  
+
+
+
 ```{r}
 #we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
 par(mar = c(3, 17, 2, 2))
